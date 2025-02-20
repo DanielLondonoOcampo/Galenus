@@ -11,15 +11,13 @@ const pt = PT_Serif({ subsets: ["latin"], weight: "400" });
 
 export default function Home() {
   const [_, setTheme] = useState("light");
-  const [text, setText] = useState(
-    "Realmente serviría de algo lo que sabes empezando de cero?"
-  );
+  const [text, setText] = useState("Realmente serviría de algo lo que sabes?");
 
   const handleThemeChange = (newTheme: "light" | "dark") => {
     // Tipo literal
     setTheme(newTheme);
     if (newTheme === "dark") {
-      setText("Si llegase el fin de el mundo como lo conocemos...");
+      setText("Si tuvieras que empezar de cero...");
     } else {
       setText("Realmente serviría de algo lo que sabes empezando de cero?");
     }
