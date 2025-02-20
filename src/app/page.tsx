@@ -10,7 +10,7 @@ const cinzel = Cinzel({ subsets: ["latin"], weight: "400" });
 const pt = PT_Serif({ subsets: ["latin"], weight: "400" });
 
 export default function Home() {
-  const [_, setTheme] = useState("light");
+  const [_theme, setTheme] = useState("light");
   const [text, setText] = useState("Texto para tema claro");
 
   const handleThemeChange = (newTheme: "light" | "dark") => {
