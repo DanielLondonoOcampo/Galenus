@@ -11,7 +11,9 @@ const pt = PT_Serif({ subsets: ["latin"], weight: "400" });
 
 export default function Home() {
   const [_, setTheme] = useState("light");
-  const [text, setText] = useState("Texto para tema claro");
+  const [text, setText] = useState(
+    "Realmente serviría de algo lo que sabes empezando de cero?"
+  );
 
   const handleThemeChange = (newTheme: "light" | "dark") => {
     // Tipo literal
